@@ -2,18 +2,18 @@
 <h1>Payment Index </h1>
 
 <table>
-  <tr>
-    <th>Ssn</th>
-    <th>Checkref</th>
-    <th>Checkno</th>
-    <th>Pmtamt</th>
-    <th></th>
-    <th></th>
-    <th></th>
+  <tr class=trhead>
+    <th>SSN</th>
+    <th>CHECK REF </th>
+    <th>CHECK NUMBER</th>
+    <th>PAYMENT AMOUNT</th>
+    <th>ACTION</th>
+    <th>ACTION</th>
+    <th>ACTION</th>
   </tr>
 
 <% @payment2s.each do |payment2| %>
-  <tr>
+  <tr class=trdetail>
     <td><%= payment2.ssn %></td>
     <td><%= payment2.checkref %></td>
     <td><%= payment2.checkno %></td>

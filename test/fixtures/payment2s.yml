@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ssn: 1
+  checkref: 
+  checkno: 1
+  pmtamt: 9.99
+
+two:
+  ssn: 1
+  checkref: 
+  checkno: 1
+  pmtamt: 9.99

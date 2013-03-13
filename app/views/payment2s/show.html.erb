@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Ssn:</b>
+  <%= @payment2.ssn %>
+</p>
+
+<p>
+  <b>Checkref:</b>
+  <%= @payment2.checkref %>
+</p>
+
+<p>
+  <b>Checkno:</b>
+  <%= @payment2.checkno %>
+</p>
+
+<p>
+  <b>Pmtamt:</b>
+  <%= @payment2.pmtamt %>
+</p>
+
+
+<%= link_to 'Edit', edit_payment2_path(@payment2) %> |
+<%= link_to 'Back', payment2s_path %>

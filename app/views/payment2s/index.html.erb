@@ -1,0 +1,29 @@
+<h1>Listing payment2s</h1>
+
+<table>
+  <tr>
+    <th>Ssn</th>
+    <th>Checkref</th>
+    <th>Checkno</th>
+    <th>Pmtamt</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @payment2s.each do |payment2| %>
+  <tr>
+    <td><%= payment2.ssn %></td>
+    <td><%= payment2.checkref %></td>
+    <td><%= payment2.checkno %></td>
+    <td><%= payment2.pmtamt %></td>
+    <td><%= link_to 'Show', payment2 %></td>
+    <td><%= link_to 'Edit', edit_payment2_path(payment2) %></td>
+    <td><%= link_to 'Destroy', payment2, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Payment2', new_payment2_path %>

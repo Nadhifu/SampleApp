@@ -1,4 +1,6 @@
 SampleApp::Application.routes.draw do
+  resources :payment2s
+
   resources :products
 
   resources :customers
